@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.amazonaws:aws-lambda-java-core:1.2.0'
+    implementation 'com.amazonaws:aws-lambda-java-events:1.1.0'
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-ec2', version: '1.11.729'
+
+    testImplementation 'junit:junit:4.12'
+}
